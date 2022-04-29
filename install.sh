@@ -43,10 +43,10 @@ echo "...[pass] Internet connection works"
 
 # check for Raspbian Jessie
 echo "Testing if the system runs Raspbian Jessie or Stretch..."
-if ! (grep -q -E "Raspbian.*jessie" /etc/os-release || grep -q -E "Raspbian.*stretch" /etc/os-release) ; then
-        echo "...[Error] Pi is not running Raspbian Jessie or Stretch! Exiting ..."
-        exit
-fi
+#if ! (grep -q -E "Raspbian.*jessie" /etc/os-release || grep -q -E "Raspbian.*stretch" /etc/os-release) ; then
+#        echo "...[Error] Pi is not running Raspbian Jessie or Stretch! Exiting ..."
+#        exit
+#fi
 echo "...[pass] Pi seems to be running Raspbian Jessie or Stretch"
 if (grep -q -E "Raspbian.*stretch" /etc/os-release) ; then
 	STRETCH=true
